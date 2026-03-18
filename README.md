@@ -3,7 +3,7 @@
 
 > "Building quiet tools for loud minds."
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://steady-loop-v1.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://steady-loop-beta.vercel.app/)
 ![Status](https://img.shields.io/badge/status-closed_beta-blue)
 
 ---
@@ -70,7 +70,7 @@ Built by Timothy Finomo as a solo product architect addressing a personal need f
 
 ---
 
-**Live Demo:** [steady-loop-v1.vercel.app](https://steady-loop-v1.vercel.app/)  
+**Live Demo:** [steady-loop-v1.vercel.app](https://steady-loop-beta.vercel.app)  
 **Contact:** [LinkedIn](https://www.linkedin.com/in/timothy-finomo-522bb1241/)
 
 ---
