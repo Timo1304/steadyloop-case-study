@@ -80,7 +80,7 @@ Built by Timothy Finomo as a solo product architect addressing a personal need f
 
 ---
 
-**Live Demo:** [steady-loop-v1.vercel.app](https://steady-loop-beta.vercel.app)  
+**Live Demo:** [steady-loop-beta.vercel.app](https://steady-loop-beta.vercel.app)  
 **Contact:** [LinkedIn](https://www.linkedin.com/in/timothy-finomo-522bb1241/)
 
 ---
