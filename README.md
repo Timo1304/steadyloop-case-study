@@ -50,6 +50,16 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 [Pending]
 
 ---
+## Changelog
+
+**v0.9.0 — March 2026**
+- Clinical PDF export with verified data accuracy across 84-day reporting windows
+- Refactored server action data fetching to REST route handlers for reliable cache invalidation
+- Fixed historical medication reporting — archived meds now appear correctly in adherence tables
+- Corrected sleep quality classification (Good/Great/Excellent) in clinical summary
+- Fixed PRN medication dose counting for multi-dose days
+
+---
 
 ## Roadmap
 
