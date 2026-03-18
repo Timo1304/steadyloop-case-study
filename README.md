@@ -23,6 +23,7 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 - **Smart Medication Cabinet:** Complex dosing schedules with offline support
 - **Complete Data Sovereignty:** One-click account deletion, zero data retention
 - **Native PWA Experience:** Installs to home screen, works offline
+- **Clinically Aligned Exports:** Clinically aligned grade exports
 
 ---
 
@@ -52,10 +53,10 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 
 ## Roadmap
 
-**Current:** v1.0 (Closed Beta)
+**Current:** v0.9.0 (Closed Beta)
 
 **Planned:**
-- Clinical PDF/CSV reporting
+- Push Notifications
 - Biometric authentication
 - Crisis intervention protocols
 
