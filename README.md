@@ -52,12 +52,43 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 ---
 ## Changelog
 
-**v0.9.0 — March 2026**
-- Clinical PDF export with verified data accuracy across 84-day reporting windows
-- Refactored server action data fetching to REST route handlers for reliable cache invalidation
-- Fixed historical medication reporting — archived meds now appear correctly in adherence tables
-- Corrected sleep quality classification (Good/Great/Excellent) in clinical summary
-- Fixed PRN medication dose counting for multi-dose days
+### v0.9.0 — March 2026
+
+**Clinical Reports**
+- Fixed archived medication blind spot — meds removed from cabinet now appear correctly in adherence tables
+- Corrected sleep quality classification — Good nights now count as Restful in clinical summary
+- Fixed PRN dose undercounting — multi-dose days now counted correctly
+- Fixed Aripiprazole adherence numerator off-by-one
+
+**Data Pipeline**
+- Refactored server actions to REST route handlers for reliable TanStack Query cache invalidation
+- Split queries into server/client modules — fixes mobile PWA SSR errors
+- Normalised medication action casing — DB was silently missing logs
+
+**Retroactive Logging**
+- 7-day backdating window for sleep and medication logs
+- BACKDATED amber tag on all retroactive entries in logs timeline
+- Server-side validation — event date required, strictly limited to 7 days
+- Duplicate prevention — already-logged dates blocked in modal
+- Retroactive logs excluded from daily checklist and active sleep widget
+
+**Dashboard**
+- Persistent Clinical Logs button — sticky mobile bottom bar and desktop sidebar
+- Split header — sticky top bar on mobile/tablet, compact sidebar header on desktop
+- Removed unnecessary isMounted pattern from sleep widget
+- Fixed sleep widget showing unlogged when retroactive logs present
+
+**Logs Page**
+- Compact mobile header — 4 rows of controls reduced to 2
+- Week navigation collapsed to chevron buttons on mobile
+- Log Past Entry reduced to icon-only on mobile
+
+**Bug Fixes**
+- Fixed daily checklist showing retroactive logs as today's entries
+- Fixed IDB store SSR crash — lazy initialisation with window guard
+- Replaced isMounted/useEffect pattern in MedicationChecklist with module-level constant
+- Fixed sleep log form breaking when log_type is null
+- Fixed medication logging rejecting valid entries due to null log_type
 
 ---
 
@@ -66,9 +97,13 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 **Current:** v0.9.0 (Closed Beta)
 
 **Planned:**
-- Push Notifications
+- Crisis intervention protocols (in design - intentionally staged)
+- Push notifications
 - Biometric authentication
-- Crisis intervention protocols
+- Wearable sleep data integration
+- Centralised timezone handling
+- Medication regime duration tracking (start/end dates)
+- Insight cards — mood/medication correlation analysis
 
 ---
 
