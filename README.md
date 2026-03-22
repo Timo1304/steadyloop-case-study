@@ -60,7 +60,7 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 ![Medication Cabinet](./med_cabinet.jpeg)
 
 ### Clinical Report — Adherence
-![PDF Clinical Report](./pdf_export_1_.jpeg)
+![PDF Clinical Report](./pdf_export_1.jpeg)
 
 ### Clinical Report — Forensics Summary
 ![PDF Forensics Summary](./pdf_export_2.jpeg)
