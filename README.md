@@ -47,7 +47,24 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 
 ## Screenshots
 
-[Pending]
+### Dashboard
+![Dashboard](./dashboard.jpeg)
+
+### Clinical Logs
+![Clinical Logs](./log_page.jpeg)
+
+### Retroactive Logging
+![Retroactive Modal](./retroactive_modal.jpeg)
+
+### Medication Cabinet
+![Medication Cabinet](./med_cabinet.jpeg)
+
+### Clinical Report — Adherence
+![PDF Clinical Report](./pdf_export_1_.jpeg)
+
+### Clinical Report — Forensics Summary
+![PDF Forensics Summary](./pdf_export_2.jpeg)
+
 
 ---
 ## Changelog
