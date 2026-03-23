@@ -32,6 +32,10 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 **Zero Friction:** Every interaction optimized for sub-5-second completion  
 **Privacy-First:** Strict data isolation, no analytics, no third-party tracking  
 **Clinically Aligned:** Built for real care provider collaboration  
+**Immutable Audit Trail:** No data is ever hard deleted. Voided logs remain 
+in the record, marked and timestamped. The only exception is full account 
+deletion, which is irreversible and user-initiated. Every clinical decision 
+has a paper trail.
 
 ---
 
