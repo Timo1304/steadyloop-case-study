@@ -73,7 +73,7 @@ has a paper trail.
 ---
 ## Changelog
 
-### v0.9.0 — March 2026
+### v0.6.0 — March 2026
 
 **Clinical Reports**
 - Fixed archived medication blind spot — meds removed from cabinet now appear correctly in adherence tables
@@ -115,16 +115,17 @@ has a paper trail.
 
 ## Roadmap
 
-**Current:** v0.9.0 (Closed Beta)
+**Current:** v0.6.0 (Closed Beta)
 
 **Planned:**
-- Crisis intervention protocols (in design - intentionally staged)
 - Push notifications
+- Medication frequency engine
 - Biometric authentication
-- Wearable sleep data integration
 - Centralised timezone handling
 - Medication regime duration tracking (start/end dates)
 - Insight cards — mood/medication correlation analysis
+- Wearable sleep data integration
+- Crisis intervention protocols (in design — intentionally staged)
 
 ---
 
