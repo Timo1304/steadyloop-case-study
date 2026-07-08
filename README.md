@@ -24,8 +24,8 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 - **Complete Data Sovereignty:** One-click account deletion, zero data retention
 - **Native PWA Experience:** Installs to home screen, works offline
 - **Clinically Aligned Exports:** Clinically aligned grade exports
-- **Ephemeral Clinical Access:** Cryptographic, double opt-in handshakes granting providers strict 48-hour read-only access[cite: 1].
-- **Guardian Safety Net:** Trusted contact integration for crisis alerts and missed medication streaks[cite: 1].
+- **Ephemeral Clinical Access:** Cryptographic, double opt-in handshakes granting providers strict 48-hour read-only access.
+- **Guardian Safety Net:** Trusted contact integration for crisis alerts and missed medication streaks.
 
 ---
 
@@ -43,11 +43,11 @@ has a paper trail.
 
 ## The Clinical Ecosystem
 
-SteadyLoop operates as a unified, secure monolith separating three core experiences via Next.js Route Groups and Row-Level Security (RLS)[cite: 1]:
+SteadyLoop operates as a unified, secure monolith separating three core experiences via Next.js Route Groups and Row-Level Security (RLS):
 
-*   **The Patient (Base):** Maintains complete data sovereignty with the ability to generate single-use, time-boxed access tokens[cite: 1].
-*   **The Doctor (Overlay):** Accesses a read-only dashboard via a patient-approved secure routing URL[cite: 1]. Providers can propose medication updates as JSON payloads, which the patient must explicitly accept into their immutable cabinet[cite: 1].
-*   **The Guardian (Safety Net):** Trusted contacts (e.g., family, partners) linked via secure connection codes[cite: 1]. This role facilitates vital intervention during manual SOS triggers or sustained missed medication streaks[cite: 1].
+*   **The Patient (Base):** Maintains complete data sovereignty with the ability to generate single-use, time-boxed access tokens.
+*   **The Doctor (Overlay):** Accesses a read-only dashboard via a patient-approved secure routing URL. Providers can propose medication updates as JSON payloads, which the patient must explicitly accept into their immutable cabinet.
+*   **The Guardian (Safety Net):** Trusted contacts (e.g., family, partners) linked via secure connection codes. This role facilitates vital intervention during manual SOS triggers or sustained missed medication streaks.
 
 ---
 
@@ -58,7 +58,7 @@ SteadyLoop operates as a unified, secure monolith separating three core experien
 - Offline-first architecture with smart synchronization
 - Edge-deployed for global low-latency access
 - Dark mode default with accessibility compliance
-- **Strict Access Control:** Database-level security via Supabase RLS and short-lived UUID tokens for clinical handshakes[cite: 1].
+- **Strict Access Control:** Database-level security via Supabase RLS and short-lived UUID tokens for clinical handshakes.
 
 ---
 
