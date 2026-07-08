@@ -24,6 +24,8 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 - **Complete Data Sovereignty:** One-click account deletion, zero data retention
 - **Native PWA Experience:** Installs to home screen, works offline
 - **Clinically Aligned Exports:** Clinically aligned grade exports
+- **Ephemeral Clinical Access:** Cryptographic, double opt-in handshakes granting providers strict 48-hour read-only access[cite: 1].
+- **Guardian Safety Net:** Trusted contact integration for crisis alerts and missed medication streaks[cite: 1].
 
 ---
 
@@ -32,10 +34,20 @@ SteadyLoop is a Progressive Web App designed specifically for stability tracking
 **Zero Friction:** Every interaction optimized for sub-5-second completion  
 **Privacy-First:** Strict data isolation, no analytics, no third-party tracking  
 **Clinically Aligned:** Built for real care provider collaboration  
-**Immutable Audit Trail:** No data is ever hard deleted. Voided logs remain 
-in the record, marked and timestamped. The only exception is full account 
-deletion, which is irreversible and user-initiated. Every clinical decision 
+**Immutable Audit Trail:** No data is ever hard deleted. Voided logs remain  
+in the record, marked and timestamped. The only exception is full account  
+deletion, which is irreversible and user-initiated. Every clinical decision  
 has a paper trail.
+
+---
+
+## The Clinical Ecosystem
+
+SteadyLoop operates as a unified, secure monolith separating three core experiences via Next.js Route Groups and Row-Level Security (RLS)[cite: 1]:
+
+*   **The Patient (Base):** Maintains complete data sovereignty with the ability to generate single-use, time-boxed access tokens[cite: 1].
+*   **The Doctor (Overlay):** Accesses a read-only dashboard via a patient-approved secure routing URL[cite: 1]. Providers can propose medication updates as JSON payloads, which the patient must explicitly accept into their immutable cabinet[cite: 1].
+*   **The Guardian (Safety Net):** Trusted contacts (e.g., family, partners) linked via secure connection codes[cite: 1]. This role facilitates vital intervention during manual SOS triggers or sustained missed medication streaks[cite: 1].
 
 ---
 
@@ -46,6 +58,7 @@ has a paper trail.
 - Offline-first architecture with smart synchronization
 - Edge-deployed for global low-latency access
 - Dark mode default with accessibility compliance
+- **Strict Access Control:** Database-level security via Supabase RLS and short-lived UUID tokens for clinical handshakes[cite: 1].
 
 ---
 
@@ -68,7 +81,6 @@ has a paper trail.
 
 ### Clinical Report — Forensics Summary
 ![PDF Forensics Summary](./pdf_export_2.jpeg)
-
 
 ---
 ## Changelog
@@ -142,4 +154,4 @@ Built by Timothy Finomo as a solo product architect addressing a personal need f
 
 ---
 
-© 2025 Timothy Finomo. All Rights Reserved.
+© 2026 Timothy Finomo. All Rights Reserved.
